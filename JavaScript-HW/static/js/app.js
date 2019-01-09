@@ -24,7 +24,7 @@ function renderTable() {
     for (var i = 0; i <= tableData.length; i++) {
         // Get current ufo info object and its fields
         var ufoInfo = tableData[i];
-        var fields = Object.keys(info)
+        var fields = Object.keys(ufoInfo)
 
         // Add a row in tbody
         var row = tbod.insertRow(i);
