@@ -11,7 +11,9 @@ var shapeInput = document.querySelector("#shape");
 var searchBtn = document.querySelector("#search");
 
 // Event listener for search button
-searchBtn.addEventListener("click", handleSearchClick);
+if(searchBtn) {
+   searchBtn.addEventListener("click", handleSearchClick);
+};
 
 // Function to render ufo data in tbody
 function renderTable() {
